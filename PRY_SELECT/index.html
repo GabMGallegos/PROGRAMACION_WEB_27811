@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SELECT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIOS</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <!-- <input type="submit"> -->
+            <!-- SELECT para FORM -->
+            <fieldset>
+                <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+                <select name="lenguaje_programacion" id="lenguaje_programacion">
+                    <option value="c_mas_mas">C++</option>
+                    <option value="java">JAVA</option>
+                    <option value="python">PYTHON</option>
+                    <option value="HTML" disabled>HTML</option>
+                </select>
+                <input type="date" name="" id="" placeholder="dd-mm-aaaa" value="27-10-2025" max="27-10-2025">
+            </fieldset>
+
+            
+
+            <p>
+
+            </p>
+
+            <label for="musica_favorita">SELECCIONE SU MUSICA FAV</label>
+            <select name="musica_favorita[]" id="musica_favorita" multiple required size="10" autofocus>
+                <!-- <option value="Loba">Shakira Loba</option>
+                <option value="anoche" selected>BAD BUNNY anoche</option>
+                <option value="ALL_of_me">John lennon all of me</option>
+                <option value="triste">JOSE JOSE TRISTE</option> -->
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="Loba" selected>Shakira Loba</option>
+                    <option value="anoche" selected>BAD BUNNY anoche</option>
+                    <option value="ALL_of_me" disabled selected>John lennon all of me</option>
+                    <option value="triste">JOSE JOSE TRISTE</option>
+                </optgroup>
+
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="Loba">Shakira Loba</option>
+                    <option value="anoche" selected>BAD BUNNY anoche</option>
+                    <option value="ALL_of_me">John lennon all of me</option>
+                    <option value="triste">JOSE JOSE TRISTE</option>
+                </optgroup>
+            </select>
+            <p>
+
+            </p>
+            
+            <!-- textarea para form -->
+            <label for="frase_motivadora">ingrese su grase del dia de hoy</label>
+            <textarea name="frase_motivadora" id="frase_motivadora" rows="5" cols="30" required disabled>PRuyeba</textarea>
+
+            <p>
+
+            </p>
+            <!-- hidden -->
+            <input type="hidden" name="cedula_usuario" value="0987654321">
+            <button type="submit">
+                Enviar al servidor
+            </button>
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

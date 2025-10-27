@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FORMULARIO ESTUDIANTE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <form action="server2.html" method="get">
+        <label for="cedula">ESCRIBA SU CEDULA DE IDENTIDAD: </label>
+        <input type="number" name="cedula" id="cedula" pattern="^\d{10}$" required>
+        
+        <br>
+        <br>
+        <label for="fecha_nacimiento">ESCRIBA SU FECHA DE NACIMIENTO:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" min="2015-01-10" max="2025-10-27" required>
+        
+        <br>
+        <br>  
+        <label for="materias">SELECCIONE 5 MATERIAS</label>
+        <br>
+        <select name="materias[]" id="materias" multiple required size="6" autofocus>
+            <optgroup title="INGENIERIA EN SOFTWARE" label="INGENIERIA EN SOFTWARE">
+                <option value="PROGRAMACION_WEB" selected>PROGRAMACION WEB</option>
+                <option value="BASES_DE_DATOS" selected>BASES DE DATOS</option>
+                <option value="METODOS_NUMERICOS" selected>METODOS NUMERICOS</option>
+                <option value="CALCULO_VECTORIAL" selected>CALCULO VECTORIAL</option>
+                <option value="CALCULO_VECTORIAL_AVANZADO" selected>CALCULO VECTORIAL AVANZADO</option>
+                <option value="ESTADISTICA" disabled>ESTADISTICA</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+        <label for="submit">SUBA SU HOJA DE VIDA:</label>
+        <input type="file" name="CV" id="CV" accept="aplication/pdf" required>
+
+
+        <br>
+        <br>
+        <label for="ID_BANNER">ID_BANNER</label>
+        <input type="text" name="" id="" pattern="[A-Z]{3}" required>
+
+        <br>
+        <br>
+        <button type="submit">
+            Enviar formulario
+        </button>
+    </form>
+</body>
+</html>
