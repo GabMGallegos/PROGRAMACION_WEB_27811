@@ -10,8 +10,19 @@
 <body>
     <form action="server2.html" method="get">
         <label for="cedula">ESCRIBA SU CEDULA DE IDENTIDAD: </label>
-        <input type="number" name="cedula" id="cedula" pattern="^\d{10}$" required>
-        
+        <!-- <input type="number" name="cedula" id="cedula" pattern="^\d{10}$" required> -->
+        <!-- pattern solo funciona con type=text -->
+        <input 
+            type="text" 
+            name="cedula" 
+            id="cedula" 
+            maxlength="10" 
+            inputmode="numeric" 
+            pattern="^[0-9]{10}" 
+            title="Ingrese solo 10 digitos" 
+            required
+        >
+
         <br>
         <br>
         <label for="fecha_nacimiento">ESCRIBA SU FECHA DE NACIMIENTO:</label>
@@ -41,7 +52,14 @@
         <br>
         <br>
         <label for="ID_BANNER">ID_BANNER</label>
-        <input type="text" name="" id="" pattern="[A-Z]{3}" required>
+        <input 
+            type="text" 
+            name="ID_BANNER" 
+            id="ID_BANNER" 
+            pattern="^[A-Z]{3}[0-9]{5}$" 
+            title="Formato: LMD12345"
+            required
+        >
 
         <br>
         <br>
