@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS en Pagina</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+        /* afecta a todos los elementos de nuestra pagina */
+        *{
+            color: aqua;
+        }
+
+        /* por etiqueta */
+        h1{
+            color: blue;
+            font-size: 56px;
+        }
+
+        p{
+            color: #29aa4a;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        /* button{
+            background-color: #29aa4a;
+            border-radius: 0px;
+            font-size: 35px;
+        } */
+        .botones-personalizados{
+            background-color: #29aa4a;
+            border-radius: 0px;
+            font-size: 35px;
+            width: 100%;
+        }
+
+        #boton-unico{
+            background-color: blueviolet;
+            border-radius: 30px;
+            font-size: 24px;
+            width: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="public/css/boton_enviar.css">
+
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <h1>saludos</h1>
+    <p>como estas?</p>
+    <hr>
+    <button class="botones-personalizados boton-enviar">Boton1</button>
+    <button class="botones-personalizados">Boton2</button>
+    <button class="botones-personalizados" id="boton-unico">Boton3</button>
+</body>
+</html>
